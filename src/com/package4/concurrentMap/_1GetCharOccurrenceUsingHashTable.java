@@ -21,6 +21,6 @@ public class _1GetCharOccurrenceUsingHashTable {
         System.out.println(occurrences);
     }
 }
-// Here even though the Hashtable itself is thread-safe, out entire login inside for-loop is not,
+// Here even though the Hashtable itself is thread-safe, out entire logic inside for-loop is not,
 // one thread can read the value & before this thread increments the value some other thread also reads the value, now one increment/operation is lost.
 // To resolve this we will use ConcurrentHashMap next.
